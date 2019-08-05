@@ -11,7 +11,20 @@ main {
     width: 1440px;
 }
 
-.image {
-  width: 364px;
-  height: 200px;
+aside.image-container {
+  width: 1440px;
+  display: flex;
 }
+
+.image {
+  flex: 1 0 20%;
+  align-self: center;
+  width: calc(100% * (1/4) - 2px);
+  margin-top: 2px;
+}
+
+.image1, .image2, .image3 {
+  margin-right: 2px;
+}
+
+/* Footer */
