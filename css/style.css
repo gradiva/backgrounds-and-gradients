@@ -1,0 +1,17 @@
+main {
+  height: 100vh;
+}
+
+.main-image {
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 62% 100% no-repeat;
+  background-size: 1440px 1315px;
+  right: auto;
+    left: 50%;
+    height: 100%;
+    width: 1440px;
+}
+
+.image {
+  width: 364px;
+  height: 200px;
+}
