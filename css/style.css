@@ -16,15 +16,11 @@ a:visited {
 
 main {
   height: 100vh;
-}
-
-.main-image {
+  width: 1440px;
   background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 62% 100% no-repeat;
   background-size: 1440px 1315px;
   right: auto;
-  left: 50%;
-  height: 100%;
-  width: 1440px;
+  left: 50%; 
 }
 
 aside.image-container {
@@ -54,32 +50,47 @@ aside.image-container {
 
 nav {
   position: relative;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 nav .nav-bar {
   max-width: 980px;
   height: 36px;
-  margin: 17px auto;
+  margin: auto;
   font-size: 12px;
   font-weight: 200;
   padding-left: 0;
   border-radius: 6px;
   border-top: 1px solid #565656;
   border-bottom: 1px solid #565656;
-  background-image: linear-gradient(to bottom, #666666, #5e5e5e 50%, #676767 50%, #8d8d8d);
+  /* background-image: linear-gradient(to top, #666666, #5e5e5e 50%, #676767 50%, #8d8d8d); */
+  
+  background: linear-gradient(
+    rgb(153, 149, 149) 0%,
+    rgb(110, 110, 110) 45%,
+    rgb(80, 80, 80) 50%,
+    rgb(120, 120, 120) 98%
+  );
   box-shadow: 1px 1px 3px #565656;
 
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   color: #FFF;
 }
 
 .nav-bar-item {
-  /* margin: 3px auto; */
-  align-self: center;
+  height: 100%;
+  width: 100%;
   border-right: 0.5px solid #565656;
+  /* border-right: 1px solid #888888;
+  border-left: 1px solid #888888; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-item:hover {
+  background-image: linear-gradient(to bottom, #535353, #393939 50%, #444444 50%, #5f5f5f);
 }
 
 .nav-bar .home {
@@ -88,12 +99,38 @@ nav .nav-bar {
 
 .nav-bar-item a {
   text-shadow: 0 -2px #565656;
-  border-right: 1px solid #888888;
-  border-left: 1px solid #888888;
+  /* border-right: 1px solid #888888;
+  border-left: 1px solid #888888; */
 }
 
-.nav-bar-item a:hover {
-  background-image: linear-gradient(to bottom, #535353, #393939 50%, #444444 50%, #5f5f5f);
+.search-box { 
+  margin: 3px 8px;
+	border: 0;
+	border-radius: 12px;
+	box-shadow: rgba(0, 0, 0, 0.6) 0 2px 1px inset, rgba(255, 255, 255, 0.2) 0 1px 0;
+}
+
+.search .search-box::before {
+  color: white;
+  position: absolute;
+  margin: 2px 4px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002"; 
+}
+
+.search-box input[type='text'] {
+  width: 100%;
+  height: 100%;
+  padding: 2px 18px 1px 22px;
+  background: none;
+  border: 0;
+}
+
+.search-box:focus {
+  background-size: 17px;
+  outline: none;
+  border: none;
 }
 
 /* Footer */
