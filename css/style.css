@@ -16,12 +16,14 @@ a:visited {
 /* Main */ 
 
 main {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 540px;
   width: 1440px;
   background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg) 62% 100% no-repeat;
-  background-size: 1440px 1315px;
-  right: auto;
-  left: 50%; 
+  background-size: cover;
+  background-position: center bottom;
 }
 
 aside.image-container {
@@ -47,7 +49,7 @@ aside.image-container {
 
 nav {
   position: relative;
-  /* margin: 0 auto; */
+  margin-bottom: 90px;
 }
 
 nav .nav-bar {
@@ -84,6 +86,7 @@ nav .nav-bar {
 
 .nav-bar-item:hover {
   background-image: linear-gradient(to bottom, #535353, #393939 50%, #444444 50%, #5f5f5f);
+  cursor: pointer;
 }
 
 .nav-bar .home {
@@ -118,9 +121,9 @@ nav .nav-bar {
   border: 0;
 }
 
-.search-box:focus {
-  color: black;
+.search .search-box input:focus {
   background-size: 17px;
+  width: 150px;
   outline: none;
   border: none;
 }
