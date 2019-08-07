@@ -1,6 +1,7 @@
 /* General */
 body {
   font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+  color: white;
 }
 
 a {
@@ -38,10 +39,6 @@ aside.image-container {
   margin-left: 0;
 }
 
-/* .image1, .image2, .image3 {
-  margin-right: 2px;
-} */
-
 .image:last-of-type {
   margin-right: 0;
 }
@@ -62,9 +59,7 @@ nav .nav-bar {
   padding-left: 0;
   border-radius: 6px;
   border-top: 1px solid #565656;
-  border-bottom: 1px solid #565656;
-  /* background-image: linear-gradient(to top, #666666, #5e5e5e 50%, #676767 50%, #8d8d8d); */
-  
+  border-bottom: 1px solid #565656; 
   background: linear-gradient(
     rgb(153, 149, 149) 0%,
     rgb(110, 110, 110) 45%,
@@ -72,7 +67,6 @@ nav .nav-bar {
     rgb(120, 120, 120) 98%
   );
   box-shadow: 1px 1px 3px #565656;
-
   display: flex;
   justify-content: center;
   color: #FFF;
@@ -82,8 +76,7 @@ nav .nav-bar {
   height: 100%;
   width: 100%;
   border-right: 0.5px solid #565656;
-  /* border-right: 1px solid #888888;
-  border-left: 1px solid #888888; */
+  box-shadow: 1px 1px 3px #888888 inset;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,8 +92,6 @@ nav .nav-bar {
 
 .nav-bar-item a {
   text-shadow: 0 -2px #565656;
-  /* border-right: 1px solid #888888;
-  border-left: 1px solid #888888; */
 }
 
 .search-box { 
@@ -128,6 +119,7 @@ nav .nav-bar {
 }
 
 .search-box:focus {
+  color: black;
   background-size: 17px;
   outline: none;
   border: none;
